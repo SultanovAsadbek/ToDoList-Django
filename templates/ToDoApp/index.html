@@ -1,0 +1,132 @@
+{% extends 'ToDoApp/base.html'%}
+
+{% block content%}
+{% load static %}
+<!--  .............. CSS FILE FOR INDEX ..............  -->
+<link href="{% static 'ToDoApp/css/index.css' %}" rel="stylesheet"> 
+
+<!--  .............. CSS FILE FOR WEATHER ..............  -->
+<link href="{% static 'ToDoApp/css/weather.css' %}" rel="stylesheet"> 
+
+<!--  .............. CSS FILE FOR TODO ..............  -->
+<link href="{% static 'ToDoApp/css/todo.css' %}" rel="stylesheet"> 
+
+<div class="bgShadow">
+    <div class="wraper">
+        <!--  .............. TO DO LIST FORM ..............  -->
+        <div class="ToDo">
+            <form method="POST" action="{% url 'add'%}">
+                {% csrf_token %}
+                <center>
+                    <h1> Составить дневную задачу </h1>
+                </center>
+                <hr>
+                <input type="text" name="title" placeholder="Заголовок задачи дня">
+                <br>
+                <textarea placeholder="Задача дня...." name="task_day" required></textarea>
+                
+                <br>
+                <button>
+                    Создать
+                </button>
+            </form>
+        </div>
+        
+    
+        <!--  .............. WEATHER FORM ..............  -->
+        <div class="weather">
+            {% for error in form.non_field_errors%}
+                
+                <div class="error">
+                    {{error}}
+                </div>
+                {% endfor %}
+            <form method="POST">
+                {% csrf_token %}
+                <center>
+                    <h1> Погода </h1>
+                </center>
+                <hr>
+                <input type="text" name="city" placeholder="Введите свой город"/>
+                <button type="submit">
+                    Поиск
+                </button>
+            </form>
+            
+            {% if city_weather_update.city %}
+            <div class="card">
+                <ul>
+                <li> <img src="http://openweathermap.org/img/w/{{ city_weather_update.icon }}.png" alt=""> </li>
+                <li> <b>Город: </b> {{ city_weather_update.city }} {{ city_weather_update.country_code }} </li>
+                <li> <b>Температура: </b> {{ city_weather_update.temperature }} </li>
+                <li> <b>Описание: </b> {{ city_weather_update.description | title }} </li>
+                <li> <b>Ветер: </b> {{ city_weather_update.wind }} </li>
+                <li> <b>Влажность: </b> {{ city_weather_update.humidity }} </li>
+                </ul>
+            </div>
+        
+            {% elif city is None %}
+                <h3> Введите свой город </h3>
+        
+            {% endif %} 
+        </div>
+    </div>
+
+    <!-- .............. Отображение составленных задач в виде таблицы .............. -->
+    <center>
+        <h1> Список составленных задач </h1>
+    </center>
+    <hr width="500">
+    <div class="ToDoList">
+        <table class="styled-table">
+            <thead>
+            <tr>
+                <th>Заголовок задачи</th>
+                <th>Задача дня</th>
+                <th>Время создания</th>
+                <th>Статус</th>
+                <th>Действие</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for list in queryset %}
+                <tr>
+                    <td height="40"> {{list.title|linebreaks}} </td>
+                    <td height="40"> {{list.task_day|linebreaks}} </td>
+                    <td height="40">{{list.date_time_create}}</td>
+                    
+                    <form method='POST' action="{% url 'update' todo_id=list.id%}">
+                        {% csrf_token %}
+                        <td 
+                        {% if list.status == 'completed'%} 
+                            class="completed" 
+                        {% elif list.status == 'not_started'%} 
+                            class="not_started"     
+                        {% elif list.status == 'in_progress'%} 
+                            class="in_progress"
+                        {% endif %} height="40">
+                            {{ form.status }}
+                            <br>
+                            {% if list.status == ''%} 
+                                <p class="st_none"> Статус не указано </p> 
+                            {% elif list.status == 'completed'%} 
+                                <p class="st_completed"> Завершено </p> 
+                            {% elif list.status == 'not_started'%} 
+                                <p class="st_not_started"> Не завершено </p>     
+                            {% elif list.status == 'in_progress'%} 
+                                <p class="st_in_progress"> В процессе </p>
+                            {% endif %}
+                        </td>
+                        <td height="40">
+                            <a class="delete" href="{% url 'delete' todo_id=list.id %}">Удалить</a>
+                            <br>        
+                            <input class="update" type="submit" onclick="{% url 'update' todo_id=list.id %}" value="Обновить">
+                        </td> 
+                    </form> 
+                {% endfor %}
+                <tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
