@@ -1,0 +1,14 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link href="{% static 'ToDoApp/css/base.css' %}" rel="stylesheet"> 
+    {% block title%} {% endblock %}
+</head>
+
+<body>
+    {% block content%}
+    {% endblock %}
+</body>
