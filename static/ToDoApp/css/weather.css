@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* ------------- Контент погоды -------------*/
+.weather {
+  width: 32%;
+  max-width: 32%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+/* ------------- Пользовательский ввод -------------*/
+.weather input {
+  background-color: #c2c2c2;
+  height: 28px;
+  width: 250px;
+  margin: 7px 10px 10px 0;
+  color: black;
+  font-size: 1em;
+  margin-left: 23px;
+  padding-left: 5px;
+  caret-color: black;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 2px;
+  margin-top: 0px;
+}
+
+
+/* ------------- Отображение погоды -------------*/
+ul,
+li {
+  display: block;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #282828;
+  border-radius: 12px;
+  width: 250px;
+  text-align: left;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #c2c2c2;
+  font-size: 14px;
+  transition: 0.7s;
+  font-family: 'Roboto', sans-serif;
+}

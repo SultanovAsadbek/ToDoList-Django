@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* ------------- Контент ввод задачи -------------*/
+.ToDo {
+  width: 60%;
+  max-width: 60%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+/* ------------- Контент вывод задачи -------------*/
+.ToDoList {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+/* ----------- Пользовательские форма вводы ----------- */
+textarea {
+  background-color: #c2c2c2;
+  width: 400px;
+  height: 100px;
+  resize: none;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  border-radius: 3px;
+}
+
+.ToDo input {
+  background-color: #c2c2c2;
+  width: 400px;
+  height: 25px;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  border-radius: 3px;
+  color: black;
+  caret-color: black;
+  border: none;
+}
+
+.ToDo textarea {
+  margin-top: 10px;
+}
+
+.ToDo button {
+  margin-top: 10px;
+}
+
+.selectST {
+  background-color: #141414;
+  color: #c2c2c2;
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 28px;
+  width: 130px;
+  padding-left: 7px;
+}
+
+
+/* ------------- Таблица список составленных задач ------------- */
+.styled-table {
+  background-color: #202020d2;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  font-size: 1em;
+  font-weight: bolder;
+  font-family: 'Roboto', sans-serif;;
+  width: 80%;
+  color: #c2c2c2;
+}
+
+.styled-table thead tr {
+  background-color: #141414;
+  color: #c2c2c2;
+  text-align: center;
+}
+
+.styled-table th {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #141414;
+}
+
+/* -------- Статус задачи -------- */
+.st_none {
+  background-color: #141414;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 7px;
+  border-radius: 4px;
+}
+
+.st_completed {
+  background-color: #06642d;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 9px;
+  border-radius: 4px;
+}
+
+.st_not_started {
+  background-color: #8d2b20;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 9px;
+  border-radius: 4px;
+}
+
+.st_in_progress {
+  background-color: #157567;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 9px;
+  border-radius: 4px;
+  cursor: progress;
+}
+
+
+/* ------ Кнопки в таблицах ------ */
+.delete {
+  background-color: #a13a2e;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  transition: 0.6s;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.delete:hover {
+  background-color: #7c2b22;
+  transition: 0.6s;
+}
+
+.update {
+  background-color: #728b10;
+  color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.6s;
+  border: none;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.update:hover {
+  background-color: #5a6d0d;
+  transition: 0.6s;
+}
