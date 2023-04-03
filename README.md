@@ -1,2 +1,11 @@
+![Header](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/prj_name.gif)
+
 ## Описание
-- Это ваше персональное Django приложения.
+
+## Язык программирование
+
+## Технологии
+
+## Интерфейс
+
+## Установка и запуск проекта
