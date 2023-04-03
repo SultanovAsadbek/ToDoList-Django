@@ -4,7 +4,15 @@
 Вы чувствуете себя подавленным, пытаясь совмещать несколько задач? Оптимизируйте свои задачи с помощью ToDoList Django, которая поможет вам планировать повседневные задачи и более эффективно управлять своим временем. Благодаря простому в использовании и интуитивно понятному интерфейсу ToDoList Django гарантирует, что вы будете на правильном пути и будете видеть четкий прогресс в каждой задаче. Благодаря нашей простой, интуитивно понятной платформе и интеграции с OpenWeatherMap вы теперь можете быстро и точно планировать свои ежедневные задачи, следя за погодой. 
 <br> Поднимите свою продуктивность на новый уровень уже сегодня с ToDoList Django!
 
-
+Возможности ПО:
+- Добавление задачи в БД.
+- Просмотр задачи.
+- Удаление задачи.
+- Прогноз погоды.
+- Указать статус задачи.
+- Обновление статус задачи.
+- Красивый админ панель.
+ 
 ## Язык программирование
 ![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=yellow)
 
@@ -25,6 +33,14 @@
 <p align="center">
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_page.png">
   <strong>Рис. 1.</strong>  Главная страница пользователя
+</p>
+
+
+<p>
+  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/none_status.png" />
+  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/not_completed.png" />
+  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/in_progress.png" />
+  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/completed.png" />
 </p>
 <hr>
 
