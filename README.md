@@ -2,7 +2,7 @@
 
 ## Описание
 Оптимизируйте свои задачи с помощью ToDoList Django, которая поможет вам планировать повседневные задачи и более эффективно управлять своим временем. Благодаря простому в использовании и интуитивно понятному интерфейсу ToDoList Django гарантирует, что вы будете на правильном пути и будете видеть четкий прогресс в каждой задаче. Благодаря нашей простой, интуитивно понятной платформе и интеграции с OpenWeatherMap вы теперь можете быстро и точно планировать свои ежедневные задачи, следя за погодой. 
-<br> Поднимите свою продуктивность на новый уровень уже сегодня с ToDoList Django!
+<br> Поднимите свою продуктивность на новый уровень с ToDoList Django!
 
 Возможности ПО:
 - Добавление задачи в БД.
@@ -32,27 +32,28 @@
 ## Интерфейс
 <p align="center">
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_page.png">
-  <strong>Рис. 1.</strong>  Главная страница пользователя
+  <strong>Рис. 1</strong>  Главная страница пользователя
 </p>
+<hr>
 
-
-<p>
+<p align="center">
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/none_status.png" />
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/not_completed.png" />
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/in_progress.png" />
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/completed.png" />
+  <br> <strong>Рис. 2</strong> Статусы задачи
 </p>
 <hr>
 
 <p align="center">
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_admin_page.png">
-  <strong>Рис. 2.</strong> Главная страница администратора
+  <strong>Рис. 3</strong> Главная страница администратора
 </p>
 <hr>
 
 <p align="center">
   <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/taks_list_admin_page.png">
-  <strong>Рис. 3.</strong> Список составленных задач в странице администратора
+  <strong>Рис. 4</strong> Список составленных задач в странице администратора
 </p>
 
 ## Установка и запуск проекта
