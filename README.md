@@ -32,7 +32,7 @@
 ## Интерфейс
 ![main_page](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_page.png)
 
-**Рис. 1**  Главная страница пользователя
+> **Рис. 1**  Главная страница пользователя
 ---
 
 ![none_status](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/none_status.png)
@@ -40,7 +40,7 @@
 ![in_progress](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/in_progress.png)
 ![completed](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/completed.png)
 
-**Рис. 2** Статусы задачи
+> **Рис. 2** Статусы задачи
 ---
 
 ![main_admin_page](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_admin_page.png)
