@@ -1,5 +1,6 @@
 ![Header](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/prj_name.gif)
 
+
 ## Описание
 Оптимизируйте свои задачи с помощью ToDoList Django, которая поможет вам планировать повседневные задачи и более эффективно управлять своим временем. Благодаря простому в использовании и интуитивно понятному интерфейсу ToDoList Django гарантирует, что вы будете на правильном пути и будете видеть четкий прогресс в каждой задаче. Благодаря нашей простой, интуитивно понятной платформе и интеграции с OpenWeatherMap вы теперь можете быстро и точно планировать свои ежедневные задачи, следя за погодой. 
 <br> Поднимите свою продуктивность на новый уровень с ToDoList Django!
@@ -12,9 +13,11 @@
 - Указать статус задачи.
 - Обновление статус задачи.
 - Красивый админ панель.
- 
+
+
 ## Язык программирование
 ![Python](https://img.shields.io/badge/python-black?style=for-the-badge&logo=python&logoColor=yellow)
+
 
 ## Технологии
 ![Django](https://img.shields.io/badge/Django-black?style=for-the-badge&logo=django&logoColor=green)
@@ -26,7 +29,6 @@
 ![Django](https://img.shields.io/badge/django_jet_reboot-black?style=for-the-badge&logo=Vectorworks&logoColor=red)
 ![API](https://img.shields.io/badge/API-black?style=for-the-badge&logo=Vectorworks&logoColor=blue)
 ![OpenWeatherMap](https://img.shields.io/badge/openweathermap-black?style=for-the-badge&logo=Vectorworks&logoColor=blue)
-
 
 
 ## Интерфейс
@@ -56,7 +58,7 @@
 **Шаг 1 :**
 
 ![taks_list_admin_page](https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-1_installing.png)
-> Выбираем  <u>Download ZIP</u>, скачивается проект в архивированном виде.
+> Выбираем  **Download ZIP**, скачивается проект в архивированном виде.
 ---
 
 
@@ -70,20 +72,21 @@
 **Шаг 3 :**
 
 ![taks_list_admin_page](https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-3_installing.png)
-> Открываем проект в удбном нам редакторе, в моём случай это VS Code.
+> Открываем проект в удбном нам редакторе, в моём случай это **VS Code**.
 ---
 
 
 **Шаг 4 :**
 > Создаём [виртуальное окружение](https://pyneng.readthedocs.io/ru/latest/book/01_intro/virtualenv.html) для того чтобы:
-+ изолировать проекты друг от друга </li>
-+ не засорять систему </li>
-+ установить файл зависимости локально </li>
-+ выполнения программы внутри этого окружения </li>
++ изолировать проекты друг от друга 
++ не засорять систему 
++ установить файл зависимости локально 
++ выполнения программы внутри этого окружения 
 
 ```
 python -m venv venv
 ```
+
 
 **Шаг 5 :**
 > Активируем виртуальное окружение
@@ -92,6 +95,7 @@ python -m venv venv
 ./venv/scripts/activate
 ```
 
+
 **Шаг 6:**
 > Переходим в директорию проекта
 
@@ -99,8 +103,9 @@ python -m venv venv
 cd ToDoList-Django-main
 ```
 
+
 **Шаг 7:**
-> Установливаем все необходимые библиотеки из файл зависимости
+> Установливаем все необходимые библиотеки из файла зависимости ```requirements.txt```
 
 ```
 pip install -r requirements.txt
@@ -108,7 +113,7 @@ pip install -r requirements.txt
 
 
 **Шаг 8 :**
-> Создадим таблицы в базе данных затем производим миграцию 
+> Создадим таблицы в базе данных, затем производим миграцию
 
 ```
 python manage.py makemigrations ToDoApp
@@ -118,8 +123,9 @@ python manage.py makemigrations ToDoApp
 python manage.py migrate ToDoApp
 ```
 
+
 **Шаг 9:**
-> Создадим файл ```.env``` в которм будет [пременные среды](https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1), в директорию ```ToDoList-Django-main\aToDoList\```.
+> Создадим файл ```.env``` в котором будут хранятся [пременные среды](https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1), в директорию ```ToDoList-Django-main\aToDoList\```.
 <br> В файл ```.env``` вставляем следующие данные:
 
 ```
