@@ -30,35 +30,56 @@
 
 
 ## Интерфейс
-<p align="center">
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_page.png">
-  <strong>Рис. 1</strong>  Главная страница пользователя
-</p>
+![main_page](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_page.png)
+
+**Рис. 1**  Главная страница пользователя
+---
+
+![none_status](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/none_status.png)
+![not_completed](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/not_completed.png)
+![in_progress](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/in_progress.png)
+![completed](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/completed.png)
+
+**Рис. 2** Статусы задачи
+---
+
+![main_admin_page](https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_admin_page.png)
+**Рис. 3** Главная страница администратора
 <hr>
 
 <p align="center">
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/none_status.png" />
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/not_completed.png" />
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/in_progress.png" />
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/completed.png" />
-  <br> <strong>Рис. 2</strong> Статусы задачи
-</p>
-<hr>
-
-<p align="center">
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/main_admin_page.png">
-  <strong>Рис. 3</strong> Главная страница администратора
-</p>
-<hr>
-
-<p align="center">
-  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/taks_list_admin_page.png">
+  <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/Example/Project_assets/taks_list_admin_page.png" />
   <strong>Рис. 4</strong> Список составленных задач в странице администратора
 </p>
 
 ## Установка и запуск проекта
 <h3> Шаг 1 : </h3>
 <p>
- <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-1_installing.png">
+ <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-1_installing.png" />
+ <br> Выбираем  <b> Download ZIP </b>, скачивается проект в архивированном виде.
 </p>
-Выбираем '''Download ZIP'''
+
+
+<h3> Шаг 2 : </h3>
+<p>
+ <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-2_installing.png" />
+ <br> Извлечём скачанный файл.
+</p>
+
+<h3> Шаг 3 : </h3>
+<p>
+ <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-3_installing.png" />
+ <br> Открываем проект в удбном нам редакторе, в моём случай это <b> VS Code </b> 
+</p>
+
+<h3> Шаг 4 : </h3>
+Создаём <a href="https://pyneng.readthedocs.io/ru/latest/book/01_intro/virtualenv.html">виртуальное окружение </a> для того чтобы:
+<ul>
+ <li> изолировать проекты друг от друга </li>
+ <li> не засорять систему </li>
+ <li> установить файл зависимости локально </li>
+ <li> выполнения программы внутри этого окружения </li>
+</ul>
+```
+python -m venv venv
+```
