@@ -57,3 +57,8 @@
 </p>
 
 ## Установка и запуск проекта
+<h3> Шаг 1 : </h3>
+<p>
+ <img src="https://github.com/SultanovAsadbek/ToDoList-Django/blob/main/Project_assets/step-1_installing.png">
+</p>
+Выбираем '''Download ZIP'''
