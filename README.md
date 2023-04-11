@@ -105,7 +105,9 @@ cd ToDoList-Django-main
 
 
 **Шаг 7:**
-> Установливаем все необходимые библиотеки из файла зависимости ```requirements.txt```
+<<<<<<< HEAD
+> Установим все необходимые библиотеки из файла зависимости ```requirements.txt```
+>>>>>>> a2bc4e6d3ba1833cd707e5bcf96b8f07c6325d17
 
 ```
 pip install -r requirements.txt
